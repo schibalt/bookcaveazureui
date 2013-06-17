@@ -37,7 +37,7 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\bookcavecustomer-master\MvcWebRole1\MvcWebRole1.csproj">
+    <ProjectReference Include="..\MvcWebRole1\MvcWebRole1.csproj">
       <Name>MvcWebRole1</Name>
       <Project>{a25e55c9-f1e2-4cd5-a8aa-f2757e5d1fbf}</Project>
       <Private>True</Private>
@@ -48,11 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MvcWebRole1Content\" />
+    <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MvcWebRole1Content\diagnostics.wadcfg">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\bookcaveserviceProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
